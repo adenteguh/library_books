@@ -19,7 +19,7 @@ Sebelum menjalankan program, pastikan Anda telah menyiapkan hal-hal berikut:
 Agar aplikasi dapat berjalan secara offline (lokal), Anda perlu memasang database terlebih dahulu:
 
 1.  Buka browser dan akses **[http://localhost/phpmyadmin](http://localhost/phpmyadmin)**.
-2.  Buat database baru dengan nama: `db_perpustakaan` (atau sesuaikan dengan konfigurasi di `koneksi.php`).
+2.  Buat database baru dengan nama: `db_library` (atau sesuaikan dengan konfigurasi di `koneksi.php`).
 3.  Pilih database yang baru dibuat, lalu klik tab **Import**.
 4.  Klik **Choose File**, pilih file `.sql` yang sudah didownload.
 5.  Klik tombol **Go** / **Kirim** di bagian bawah.
@@ -93,3 +93,4 @@ CREATE TABLE IF NOT EXISTS books (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
